@@ -34,12 +34,11 @@ html, body {
     display: flex;
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center; /* Căn giữa theo chiều dọc */
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
   .present-box {
-       z-index: 5;
-    transform-style: preserve-3d;
+   transform-style: preserve-3d;
     width: 200px;
     height: 200px;
     margin: auto;
