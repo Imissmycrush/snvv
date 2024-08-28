@@ -1,10 +1,11 @@
 .bunny {
+  position: absolute; /* Position the bunny absolutely */
+  right: 0; /* Align to the right side of the canvas */
+  top: 0; /* Align to the top of the canvas */
+  margin: 75px; /* Margin from the top and right */
   display: flex;
   justify-content: flex-end; /* Aligns content to the right */
-  margin: 75px;
-  margin-right: 100px; /* Adds extra space on the right */
 }
-
 
 .head {
   width: 230px;
@@ -16,22 +17,19 @@
 }
 
 .ear {
-  position: relative;
+  position: absolute;
   width: 60px;
   height: 90px;
   border: 1px solid transparent;
   background: #ECEFF1;
   border-radius: 50% 50% 15% 15%;
   transform: rotate(-30deg);
-  top: -25%;
-  left: -5%;
 }
 
 .ear.right {
-  position: relative;
   height: 100px;
-  top: -75%;
-  left: 75%;
+  top: 25%; /* Adjusted from -75% to align with the head */
+  left: 75%; /* Adjusted from 75% to correctly position */
   transform: rotate(30deg);
   animation-name: ear;
   animation-duration: 2s;
@@ -39,7 +37,6 @@
 }
 
 .ear-pink {
-  position: relative;
   width: 45px;
   height: 70px;
   border: 1px solid transparent;
@@ -50,9 +47,7 @@
 }
 
 .eye {
-  position: relative;
-  top: -50%;
-  left: 10%;
+  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -61,33 +56,32 @@
 }
 
 .eye.right {
-  position: relative;
-  left: 67%;
-  top: -75%;
+  left: 50%; /* Adjusted to center align with the head */
+  top: 25%; /* Adjusted to align vertically */
 }
 
 .eye:after {
   display: block;
   content: "";
-  position: relative;
+  position: absolute;
   width: 10px;
   height: 10px;
   border: 1px solid transparent;
   background: #ECEFF1;
+  border-radius: 50%;
   top: 15%;
   left: 15%;
-  border-radius: 50%;
 }
 
 .mouth {
-  position: relative;
+  position: absolute;
   width: 10%;
   height: 10%;
-  top: -75%;
-  left: 45%;
   border-radius: 20% 20% 100% 100%;
   border: 1px solid transparent;
   background: pink;
+  top: 50%; /* Adjusted for vertical alignment */
+  left: 45%; /* Adjusted to center horizontally */
 }
 
 @keyframes ear {
@@ -101,8 +95,9 @@
     transform: rotate(30deg);
   }
 }
-.rabbit-show{
-        opacity: 1 !important;
-        right: 0 !important;
-        transition: all 2s;
-    }
+
+.rabbit-show {
+  opacity: 1 !important;
+  right: 0 !important;
+  transition: all 2s;
+}
