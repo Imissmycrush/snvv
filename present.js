@@ -49,12 +49,6 @@ function init() {
   }
     
   if (present) {
-  present.addEventListener("click", function(e){
-    present.classList.toggle("open");
-    var card = document.getElementById('card');
-    var overlay = document.getElementById('overlay'); // Lớp phủ mờ
-
-    if (present) {
     present.addEventListener("click", function(e){
       present.classList.toggle("open");
       var card = document.getElementById('card');
@@ -70,3 +64,4 @@ function init() {
 }
 
 init();
+
