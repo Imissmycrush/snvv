@@ -8,7 +8,6 @@
         background-image: url("https://image.freepik.com/free-vector/open-gift-box-with-heart-shape-confetti-burst-explosion-3d-valentines-day-romantic-gift_165143-438.jpg");
         background-size: 50vh, 70vh;
         box-shadow: 0px 0px 20px red;
-        transform: rotate(5deg);
         top: 0px;
         opacity: 0;
         left: -200%;
