@@ -28,20 +28,22 @@ html, body {
   }
   
   .wrap-present {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
+    height: 100%;
     display: flex;
-    align-self: flex-end;
-  }
-  
-  .present-box {
-    transform-style: preserve-3d;
+    align-items: center;
+    justify-content: center;
+}
+
+.present-box {
     width: 200px;
     height: 200px;
-    margin: auto;
-    -webkit-animation: rotate 11s alternate linear infinite;
-            animation: rotate 11s alternate linear infinite;
-    cursor: pointer;
-  }
+    /* Các thuộc tính khác... */
+}
   .present-box:hover {
     -webkit-animation: staticFront 700ms ease forwards;
             animation: staticFront 700ms ease forwards;
