@@ -28,12 +28,14 @@ html, body {
   }
   
   
-  .wrap-present {
+ .wrap-present {
     width: 100%;
+    height: 100vh; /* Hoặc một chiều cao cụ thể nếu cần */
     display: flex;
-    align-self: flex-end;
-  }
-  
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
   .present-box {
     transform-style: preserve-3d;
     width: 200px;
