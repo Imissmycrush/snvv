@@ -45,8 +45,6 @@ function init() {
   
   nametag.innerText = to;
   
-  // Ẩn hình ảnh ban đầu
-  presentImage.style.display = "none";
 }
 
 init();
