@@ -225,4 +225,9 @@ var ParticlePool = (function() {
         render();
     };
     window.onresize = setBackgroundColor;
+    function onResize() {
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+}
+window.onresize = onResize;
 })();
