@@ -5,7 +5,6 @@ var gift_image_url = giftImage || giftImageBase64;
 var nametag = document.getElementById("nametag");
 var present = document.getElementById("present");
 var presentImage = document.getElementById("present-image");
-var rabbit = document.getElementById("rabbit"); // Chọn phần tử bunny với id="rabbit"
 
 function init() {
   var graphElem = document.querySelector('.present-box > .side.top .to');
@@ -37,9 +36,7 @@ function init() {
   present.addEventListener("click", function(e) {
     present.classList.toggle("open");
     document.getElementById('card').classList.add('card-show');
-    if (rabbit) { // Kiểm tra nếu phần tử rabbit tồn tại
-      rabbit.classList.add('rabbit-show'); // Thêm lớp rabbit-show
-    }
+    
   }, false);
   
   nametag.innerText = to;
