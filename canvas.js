@@ -250,5 +250,11 @@
     this.x = x
     this.y = y
   }
+    function onResize() {
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+}
+window.onresize = onResize;
+
   })("sweaverD.com");
   
