@@ -1,4 +1,3 @@
-
 // Cần hỗ trợ hãy liên hệ: 
 // Mr-Nam http://facebook.com/nam.nodemy
 // Các bạn muốn học lập trình thì tham gia Nhóm zalo tự học lập trình nhé: https://zalo.me/g/yhdkef092
@@ -31,22 +30,23 @@ function init() {
   if (gift_image_url) {
     _giftImg = document.createElement("img");
     _giftImg.src = gift_image_url;
-    if(_giftLink) {
+    if (_giftLink) {
       _giftLink.appendChild(_giftImg);
     } else {
       presentImage.appendChild(_giftImg);
     }
   }
     
-  present.addEventListener("click", function(e){
-    present.classList.toggle("open");
+  present.addEventListener("click", function(e) {
+    present.style.display = "none"; // Ẩn hộp quà
+    presentImage.style.display = "block"; // Hiển thị hình ảnh
     document.getElementById('card').classList.add('card-show');
   }, false);
   
-  
-  
   nametag.innerText = to;
+  
+  // Ẩn hình ảnh ban đầu
+  presentImage.style.display = "none";
 }
 
 init();
-
