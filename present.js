@@ -5,7 +5,6 @@ var gift_image_url = giftImage || giftImageBase64;
 var nametag = document.getElementById("nametag");
 var present = document.getElementById("present");
 var presentImage = document.getElementById("present-image");
-var rabbit = document.getElementById("rabbit"); // Thêm phần tử rabbit
 
 function init() {
   var graphElem = document.querySelector('.present-box > .side.top .to');
