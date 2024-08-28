@@ -117,7 +117,7 @@ html, body {
     height: 200px;
     position: absolute;
     display: block;
-    background: repeating-linear-gradient(45deg, #cc2000, #cc2000 20px, #ffffff 20px, #ffffff 40px);
+    background: repeating-linear-gradient(90deg, #FF69B4, #FF69B4 20px, #ffffff 20px, #ffffff 40px);
     top: 0;
     left: 0;
     transition: transform 400ms;
