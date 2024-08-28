@@ -5,6 +5,7 @@
   margin: 75px; /* Margin from the top and right */
   display: flex;
   justify-content: flex-end; /* Aligns content to the right */
+  opacity: 0;
 }
 
 .head {
