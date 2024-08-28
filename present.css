@@ -34,7 +34,7 @@ html, body {
     display: flex;
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center; /* Căn giữa theo chiều dọc */
-    padding-top: 300px;
+    padding-top: 330px;
 }
 
   .present-box {
