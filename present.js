@@ -49,14 +49,20 @@ function init() {
   }
     
   if (present) {
-    present.addEventListener("click", function(e){
-      present.classList.toggle("open");
-      var card = document.getElementById('card');
-      if (card) {
-        card.classList.add('card-show');
-      }
-    }, false);
-  }
+  present.addEventListener("click", function(e){
+    present.classList.toggle("open");
+    var card = document.getElementById('card');
+    var overlay = document.getElementById('overlay'); // Lớp phủ mờ
+
+    if (card) {
+      card.classList.add('card-show');
+    }
+
+    if (overlay) {
+      overlay.style.display = 'block'; // Hiển thị lớp phủ mờ
+    }
+  }, false);
+}
   
   if (nametag) {
     nametag.innerText = to;
