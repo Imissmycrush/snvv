@@ -1,8 +1,9 @@
 .bunny {
   display: flex;
-  justify-content: flex-end; /* Đổi từ center sang flex-end để căn sang phải */
+  justify-content: flex-end; /* Aligns content to the right */
   margin: 75px;
-  margin-right: 100px; /* Thêm khoảng cách 50px từ lề phải */
+  margin-right: 100px; /* Adds extra space on the right */
+  margin-top: 150px; /* Moves the element down by 150px */
 }
 
 
