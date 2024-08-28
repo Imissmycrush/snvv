@@ -5,6 +5,7 @@ var gift_image_url = giftImage || giftImageBase64;
 var nametag = document.getElementById("nametag");
 var present = document.getElementById("present");
 var presentImage = document.getElementById("present-image");
+var rabbit = document.getElementById("rabbit"); // Thêm phần tử rabbit
 
 function init() {
   var graphElem = document.querySelector('.present-box > .side.top .to');
@@ -26,17 +27,19 @@ function init() {
   if (gift_image_url) {
     _giftImg = document.createElement("img");
     _giftImg.src = gift_image_url;
-    if(_giftLink) {
+    if (_giftLink) {
       _giftLink.appendChild(_giftImg);
     } else {
       presentImage.appendChild(_giftImg);
     }
   }
-    
+   
   present.addEventListener("click", function(e) {
     present.classList.toggle("open");
     document.getElementById('card').classList.add('card-show');
-    
+    if (rabbit) { // Kiểm tra nếu phần tử rabbit tồn tại
+      rabbit.classList.add('rabbit-show'); // Thêm lớp rabbit-show
+    }
   }, false);
   
   nametag.innerText = to;
