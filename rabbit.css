@@ -1,1 +1,116 @@
+body, html {
+  background: linear-gradient(120deg, #FF007F, #FF033E);
+  height: 100%;
+  overflow: hidden;
+}
 
+h1 {
+  text-align: center;
+  font-family: "Pacifico";
+  color: white;
+  font-size: 50px;
+}
+
+.bunny {
+  display: flex;
+  justify-content: flex-end; /* Đổi từ center sang flex-end để căn sang phải */
+  margin: 75px;
+  margin-right: 100px; /* Thêm khoảng cách 50px từ lề phải */
+}
+
+
+.head {
+  width: 230px;
+  height: 200px;
+  border: 1px solid white;
+  background: #ECEFF1;
+  border-radius: 42%;
+  box-shadow: 4px 4px 75px 20px #eedd82, -4px -4px 75px 20px #eedd82;
+}
+
+.ear {
+  position: relative;
+  width: 60px;
+  height: 90px;
+  border: 1px solid transparent;
+  background: #ECEFF1;
+  border-radius: 50% 50% 15% 15%;
+  transform: rotate(-30deg);
+  top: -25%;
+  left: -5%;
+}
+
+.ear.right {
+  position: relative;
+  height: 100px;
+  top: -75%;
+  left: 75%;
+  transform: rotate(30deg);
+  animation-name: ear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.ear-pink {
+  position: relative;
+  width: 45px;
+  height: 70px;
+  border: 1px solid transparent;
+  background: pink;
+  border-radius: 70% 70% 15% 15%;
+  left: 10%;
+  top: 10%;
+}
+
+.eye {
+  position: relative;
+  top: -50%;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: black;
+}
+
+.eye.right {
+  position: relative;
+  left: 67%;
+  top: -75%;
+}
+
+.eye:after {
+  display: block;
+  content: "";
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: 1px solid transparent;
+  background: #ECEFF1;
+  top: 15%;
+  left: 15%;
+  border-radius: 50%;
+}
+
+.mouth {
+  position: relative;
+  width: 10%;
+  height: 10%;
+  top: -75%;
+  left: 45%;
+  border-radius: 20% 20% 100% 100%;
+  border: 1px solid transparent;
+  background: pink;
+}
+
+@keyframes ear {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
