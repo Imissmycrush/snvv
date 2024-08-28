@@ -1,5 +1,3 @@
-
-
 var to = nameGirl;
 var gift_url = giftUrl;
 var gift_image_url = giftImage || giftImageBase64;
@@ -35,14 +33,23 @@ function init() {
     }
   }
     
-  present.addEventListener("click", function(e){
+  present.addEventListener("click", function(e) {
     present.classList.toggle("open");
     document.getElementById('card').classList.add('card-show');
+    
+    // Load the CSS file when the present is clicked
+    loadCSS('rabbit.css');
   }, false);
   
-  
-  
   nametag.innerText = to;
+}
+
+function loadCSS(filename) {
+  var link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.type = "text/css";
+  link.href = filename;
+  document.head.appendChild(link);
 }
 
 init();
