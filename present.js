@@ -47,16 +47,13 @@ function init() {
       presentImage.appendChild(_giftImg);
     }
   }
-  
-  // Thêm sự kiện click vào present
+    
   if (present) {
-    present.addEventListener("click", function(e) {
-      // Ẩn present
-      present.style.display = "none";
-      
-      // Hiển thị hình ảnh
-      if (presentImage) {
-        presentImage.style.display = "block";
+    present.addEventListener("click", function(e){
+      present.classList.toggle("open");
+      var card = document.getElementById('card');
+      if (card) {
+        card.classList.add('card-show');
       }
     }, false);
   }
