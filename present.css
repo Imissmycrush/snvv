@@ -37,6 +37,7 @@ html, body {
 }
 
   .present-box {
+       z-index: 5;
     transform-style: preserve-3d;
     width: 200px;
     height: 200px;
