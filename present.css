@@ -40,7 +40,7 @@ html, body {
   .present-box {
    transform-style: preserve-3d;
     width: 200px;
-    height: 200px;
+    height: 150px;
     margin: auto;
     -webkit-animation: rotate 11s alternate linear infinite;
             animation: rotate 11s alternate linear infinite;
