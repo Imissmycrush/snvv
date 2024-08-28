@@ -8,17 +8,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Mờ đen với độ mờ 50% */
-  display: none; /* Ẩn lớp phủ mờ theo mặc định */
-  z-index: 999; /* Đảm bảo lớp phủ mờ ở trên cùng */
-}
 
 .present-box.open {
-  filter: blur(10px); /* Làm mờ hộp quà */
+  filter: blur(100px); /* Làm mờ hộp quà */
 }
