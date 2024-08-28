@@ -8,7 +8,3 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.present-box.open {
-  filter: blur(100px); /* Làm mờ hộp quà */
-}
