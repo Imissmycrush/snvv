@@ -10,37 +10,39 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="rabbit.css" />
     <script src="jquery.js"></script>
-      <style>
-        html, body {
-            height: 100%;
-            padding: 0;
-            margin: 0;
-            background: #000;
-        }
-        canvas {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
+    <style>
+      html, body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background: #000;
+      }
+      canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
     </style>
   </head>
   <body>
-    <div class="bunny">
-  <div class="head">
-    <div class="ear">
-      <div class="ear-pink"></div>
+    <!-- Phần tử bunny -->
+    <div id="rabbit"> <!-- Thay đổi class thành id -->
+      <div class="head">
+        <div class="ear">
+          <div class="ear-pink"></div>
+        </div>
+        <div class="ear right">
+          <div class="ear-pink right"></div>
+        </div>
+        <div class="eye"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+      </div>
     </div>
-    <div class="ear right">
-      <div class="ear-pink right"></div>
-    </div>
-      <div class="eye"></div>
-      <div class="eye right"></div>
-      <div class="mouth"></div>
-  </div>
-</div>
-        <div class="parent">
+
+    <div class="parent">
       <canvas id="canvas"></canvas>
       <section class="above-fold">
         <div class="wrap-present">
@@ -62,13 +64,9 @@
         </div>
         <p class="info-text">Click to Open</p>
       </section>
-      <div id="card">
-         <h4 class="title-card">💘little coder💘</h4>
-         <img
-          src="hot-girl.png"
-          class="honey"
-        />
-
+      <div id="card"> <!-- Thay đổi class thành id -->
+        <h4 class="title-card">💘little coder💘</h4>
+        <img src="hot-girl.png" class="honey" />
         <h4 class="content-card">
           Happy Birthday Make A Wish. Dear brother, hope you receive everything
           you wish for this year. You deserve the best! Thanks for being such a
@@ -76,7 +74,7 @@
         </h4>
       </div>
     </div>
-    <audio autoplay loop  id="playAudio">
+    <audio autoplay loop id="playAudio">
       <source src="nhacnen3.mp3">
     </audio>
   </body>
@@ -84,6 +82,6 @@
   <script src="canvas.js"></script>
   <script src="present.js"></script>
   <script>
-    
+    // Your JavaScript code here
   </script>
 </html>
