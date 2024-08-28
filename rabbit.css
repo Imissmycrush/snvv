@@ -101,3 +101,8 @@
     transform: rotate(30deg);
   }
 }
+.card-show{
+        opacity: 1 !important;
+        right: 0 !important;
+        transition: all 2s;
+    }
