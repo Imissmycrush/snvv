@@ -87,7 +87,7 @@ html, body {
   .present-box .present {
     position: absolute;
     width: 200px;
-    height: 200px;
+    height: 1100px;
     z-index: 50;
     transform: rotateY(-180deg) rotateX(180deg) translateZ(-100px);
     display: flex;
@@ -118,7 +118,7 @@ html, body {
   
   .present-box > .side {
     width: 200px;
-    height: 200px;
+    height: 100px;
     position: absolute;
     display: block;
     background: repeating-linear-gradient(90deg, #FF69B4, #FF69B4 20px, #ffffff 20px, #ffffff 40px);
