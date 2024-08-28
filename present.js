@@ -32,13 +32,18 @@ function init() {
       presentImage.appendChild(_giftImg);
     }
   }
-   
   present.addEventListener("click", function(e) {
   // Toggle lớp 'open' cho phần tử present
   present.classList.toggle("open");
 
   // Thêm lớp 'card-show' vào phần tử card
-  document.getElementById('card').classList.add('card-show');
+  document.querySelector('#card').classList.add('card-show');
+  
+  // Thay đổi thuộc tính hoặc thêm lớp cho phần tử bunny sử dụng class
+  var bunny = document.querySelector('.bunny');
+  if (bunny) {
+    // Thêm lớp 'bunny-show' cho phần tử bunny
+    bunny.classList.add("bunny-show");
         
   }, false);
   
