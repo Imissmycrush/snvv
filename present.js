@@ -38,13 +38,7 @@ function init() {
 
   // Thêm lớp 'card-show' vào phần tử card
   document.querySelector('#card').classList.add('card-show');
-  
-  // Thay đổi thuộc tính hoặc thêm lớp cho phần tử bunny sử dụng class
-  var bunny = document.querySelector('.bunny');
-  if (bunny) {
-    // Thêm lớp 'bunny-show' cho phần tử bunny
-    bunny.classList.add("bunny-show");
-        
+           
   }, false);
   
   nametag.innerText = to;
