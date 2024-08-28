@@ -6,6 +6,13 @@ var nametag = document.getElementById("nametag");
 var present = document.getElementById("present");
 var presentImage = document.getElementById("present-image");
 
+function loadCSS(filename) {
+  var link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = filename;
+  document.head.appendChild(link);
+}
+
 function init() {
   var graphElem = document.querySelector('.present-box > .side.top .to');
   if (graphElem) {
@@ -51,10 +58,15 @@ function init() {
   if (present) {
     present.addEventListener("click", function(e){
       present.classList.toggle("open");
+
+      // Show the card
       var card = document.getElementById('card');
       if (card) {
         card.classList.add('card-show');
       }
+
+      // Load the rabbit.css file when the present is clicked
+      loadCSS("rabbit.css");
     }, false);
   }
   
@@ -64,4 +76,3 @@ function init() {
 }
 
 init();
-
