@@ -29,7 +29,7 @@
         scaleCanvas();
         // Clear the canvas and set a fixed background color
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = "hsl(210, 50%, 60%)"; // Màu cố định (xanh nhạt)
+        ctx.fillStyle = "hsl(0, 0%, 0%)"; // Màu đen
         ctx.fillRect(0, 0, canvas.width, canvas.height); // Vẽ màu nền cố định
     }
 
