@@ -45,6 +45,7 @@ html, body {
     -webkit-animation: rotate 11s alternate linear infinite;
             animation: rotate 11s alternate linear infinite;
     cursor: pointer;
+     transition: opacity 1s; 
   }
   .present-box:hover {
     -webkit-animation: staticFront 700ms ease forwards;
@@ -57,7 +58,8 @@ html, body {
     -webkit-animation: zoomIn 1s ease-in forwards;
             animation: zoomIn 1s ease-in forwards;
     transform: rotateX(-103deg) rotateY(-180deg);
-    transition: transform 400ms;
+     opacity: 0; /* Đặt opacity về 0 để làm mờ hoàn toàn */
+  transition: opacity 1s 0s; /* Thêm transition cho opacity sau khi mở */
   }
   .present-box.open .present {
     pointer-events: auto;
