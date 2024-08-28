@@ -34,8 +34,17 @@ function init() {
   }
    
   present.addEventListener("click", function(e) {
-    present.classList.toggle("open");
-    document.getElementById('card').classList.add('card-show');
+  // Toggle lớp 'open' cho phần tử present
+  present.classList.toggle("open");
+
+  // Thêm lớp 'card-show' vào phần tử card
+  document.getElementById('card').classList.add('card-show');
+  
+  // Thay đổi thuộc tính hoặc thêm lớp cho phần tử bunny
+  var bunny = document.getElementById('bunny');
+  if (bunny) {
+    // Thêm lớp 'bunny-show' cho phần tử bunny
+    bunny.classList.add("bunny-show");
     
   }, false);
   
