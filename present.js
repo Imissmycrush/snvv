@@ -49,11 +49,14 @@ document.addEventListener("DOMContentLoaded", function() {
       present.classList.toggle("open");
       document.querySelector('#card').classList.add('card-show');
 
-      // Add cake.css dynamically when present is clicked
-      var link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'cake.css'; // Path to your cake.css file
-      document.head.appendChild(link);
+      // Check if cake.css is already loaded
+      if (!document.querySelector('link[href="cake.css"]')) {
+        // Add cake.css dynamically
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'cake.css'; // Path to your cake.css file
+        document.head.appendChild(link);
+      }
 
       // Display the bunny on the canvas when the present is clicked
       var bunnyElem = document.getElementById('bunny');
