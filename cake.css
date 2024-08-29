@@ -14,8 +14,10 @@ html, body {
   margin: 0;
 }
 
-/* ============================================== Candle
-*/
+show-cake {
+  display: block; /* Show cake when this class is added */
+}
+
 
 .velas {
   background: #ffffff;
