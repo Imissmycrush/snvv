@@ -13,7 +13,6 @@
 .bunny-show {
   opacity: 1;
   transform: translateX(0); /* Make sure this matches with the initial position */
-  transition: all 2s ease-in-out;
 }
 
 
