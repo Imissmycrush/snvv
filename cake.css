@@ -36,11 +36,11 @@ body {
   height: 2.22222222px;
 }
 .velas:after {
-  top: calc(25% + 50px); /* Adjusted */
+  top: calc(25% + 200px); /* Adjusted */
   left: 0;
 }
 .velas:before {
-  top: calc(45% + 50px); /* Adjusted */
+  top: calc(45% + 200px); /* Adjusted */
   left: 0;
 }
 
