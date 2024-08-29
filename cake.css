@@ -2,7 +2,7 @@
     position: absolute;
     width: 250px;
     height: 200px;
-    top: 50%;
+     top: calc(50% + 15px); /* Move the cake down by 15px */
     left: 50%;
     margin-top: -70px;
     margin-left: -125px;
@@ -12,7 +12,7 @@
     width: 270px;
     height: 110px;
     position: absolute;
-    bottom: -10px;
+    bottom: calc(-10px - 15px); /* Move the plate down by 15px */
     left: -10px;
     background-color: #ccc;
     border-radius: 50%;
@@ -56,7 +56,7 @@
 .layer-bottom { top: 66px; }
 
 .icing {
-    top: 2px;
+top: calc(2px + 15px); /* Move the icing down by 15px */
     left: 5px;
     background-color: #f0e4d0;
     width: 240px;
@@ -116,7 +116,7 @@
     width: 16px;
     height: 50px;
     border-radius: 8px / 4px;
-    top: -20px;
+    top: calc(-20px + 15px); /* Move the candle down by 15px */
     left: 50%;
     margin-left: -8px;
     z-index: 10;
@@ -139,7 +139,7 @@
     width: 15px;
     height: 35px;
     border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
-    top: -34px;
+     top: calc(-34px + 15px); /* Move the flame down by 15px */
     left: 50%;
     margin-left: -7.5px;
     z-index: 10;
