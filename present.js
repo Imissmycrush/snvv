@@ -55,6 +55,7 @@ if (!cakeElem) {
     // Create the cake element if it doesn't exist
     cakeElem = document.createElement('div');
     cakeElem.id = 'cake';
+    cakeElem.classList.add('cake');
     document.body.appendChild(cakeElem);
 
     // Create the candles element using cake.css
@@ -68,7 +69,7 @@ if (!cakeElem) {
         fuego.classList.add('fuego');
         velas.appendChild(fuego);
     }
-}
+} 
       
       // Display the bunny on the canvas when the present is clicked
       var bunnyElem = document.getElementById('bunny');
