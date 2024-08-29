@@ -5,3 +5,26 @@ canvas {
     top: 0;
     left: 0;
 }
+h1 {
+  z-index: 2;
+  position: relative;
+  color: white;
+  font-family: "Sacramento";
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px #FF007F, 3px 3px #FF033E;
+  top:5 %; /* Decreased from 35% to 20% to move it higher */
+  animation-name: fall;
+  animation-duration: 6s;
+  animation-timing-function: infinite;
+}
+
+
+@keyframes fall {
+  0% {
+    top: 5%; /* Adjusted starting point */
+  }
+  100% {
+    top: 5%; /* Adjusted end point to match the new top value */
+  }
+}
