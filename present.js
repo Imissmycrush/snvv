@@ -51,9 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Display the bunny on the canvas when the present is clicked
       var bunnyElem = document.getElementById('bunny');
-      if (bunnyElem) {
-        bunnyElem.classList.add('bunny-show');
-      } else {
+      if (!bunnyElem) {
         // Create the bunny element if it doesn't exist
         bunnyElem = document.createElement('div');
         bunnyElem.id = 'bunny';
@@ -84,9 +82,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var mouth = document.createElement('div');
         mouth.classList.add('mouth');
         head.appendChild(mouth);
-
-        bunnyElem.classList.add('bunny-show');
       }
+      
+      // Show the bunny with transition effect
+      bunnyElem.classList.add('bunny-show');
     });
 
     nametag.innerText = to;
