@@ -4,10 +4,14 @@ body {
   height: 100%;
 }
 
+body {
+  background: #ee9ca7;
+}
+
 #cake {
   display: block;
   position: relative;
-  margin: 0 auto -10px auto;
+  margin: -10em auto 0 auto;
 }
 
 /* ============================================== Candle
@@ -93,4 +97,3 @@ body {
     transform: translateY(0);
   }
 }
-
