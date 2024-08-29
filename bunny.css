@@ -1,12 +1,14 @@
 .bunny {
   position: absolute;
-  right: 0;
+  right: -300px; /* Off-screen to the right */
   top: 150px;
-  margin: 75px;
   display: flex;
   justify-content: flex-end;
-  opacity: 0; /* Start with the bunny invisible */
+  opacity: 0;
+  transform: translateX(100%); /* Initial position */
+  transition: all 2s ease-in-out;
 }
+
 
 .bunny-show {
   opacity: 1;
