@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var contentElem = document.querySelector('#card .content-card');
     var honeyElem = document.querySelector('#card .honey');
 
-    if (titleElem) titleElem.innerHTML = 💘${titleCard}💘;
-    if (contentElem) contentElem.innerHTML = ${contentCard};
-    if (honeyElem) honeyElem.setAttribute('src', ${giftImage});
+    if (titleElem) titleElem.innerHTML = `💘${titleCard}💘`;
+    if (contentElem) contentElem.innerHTML = `${contentCard}`;
+    if (honeyElem) honeyElem.setAttribute('src', `${giftImage}`);
 
     var _giftLink, _giftImg;
 
@@ -49,7 +49,13 @@ document.addEventListener("DOMContentLoaded", function() {
       present.classList.toggle("open");
       document.querySelector('#card').classList.add('card-show');
 
-            // Display the bunny on the canvas when the present is clicked
+      // Add cake.css dynamically when present is clicked
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'cake.css'; // Path to your cake.css file
+      document.head.appendChild(link);
+
+      // Display the bunny on the canvas when the present is clicked
       var bunnyElem = document.getElementById('bunny');
       if (!bunnyElem) {
         // Create the bunny element if it doesn't exist
