@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function() {
         bunnyElem.classList.add('bunny-show');
       }, 0); // Thực hiện thêm lớp sau khi phần tử đã được thêm vào DOM
     });
-   
 
     nametag.innerText = to;
   }
