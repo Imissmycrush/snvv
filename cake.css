@@ -5,7 +5,7 @@ html, body {
   overflow: hidden; /* Prevent scrolling */
 }
 
-.cake {
+#cake {
   display: block;
   position: absolute; /* Use absolute positioning for precise placement */
   top: 30%; /* Center vertically */
@@ -52,8 +52,7 @@ html, body {
 
 .fuego {
   border-radius: 100%;
-  position: absolute;
-  top: -20px; /* Adjust top to fit within canvas */
+  20px; /* Adjust top to fit within canvas */
   left: 50%;
   margin-left: -2.6px;
   width: 6.66666667px;
@@ -95,4 +94,4 @@ html, body {
   to {
     transform: translateY(0);
   }
-}
+} 
