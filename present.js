@@ -49,33 +49,28 @@ document.addEventListener("DOMContentLoaded", function() {
       present.classList.toggle("open");
       document.querySelector('#card').classList.add('card-show');
       
-  // Display the cake on the canvas when the present is clicked
-var cakeElem = document.getElementById('cake');
-if (!cakeElem) {
-    // Create the cake element if it doesn't exist
-    cakeElem = document.createElement('div');
-    cakeElem.id = 'cake';
-    cakeElem.classList.add('cake');
-    document.body.appendChild(cakeElem);
+      // Display the cake on the canvas when the present is clicked
+      var cakeElem = document.getElementById('cake');
+      if (!cakeElem) {
+        // Create the cake element if it doesn't exist
+        cakeElem = document.createElement('div');
+        cakeElem.id = 'cake';
+        cakeElem.classList.add('cake');
+        document.body.appendChild(cakeElem);
 
-    // Create the candles element using cake.css
-    var velas = document.createElement('div');
-    velas.classList.add('velas');
-    cakeElem.appendChild(velas);
+        // Create the candles element using cake.css
+        var velas = document.createElement('div');
+        velas.classList.add('velas');
+        cakeElem.appendChild(velas);
 
-    // Create multiple flames (fire) for the candles
-    for (var i = 0; i < 5; i++) {
-        var fuego = document.createElement('div');
-        fuego.classList.add('fuego');
-        velas.appendChild(fuego);
-    }
-} 
-       // Show the bunny with transition effect
-      setTimeout(function() {
-        bunnyElem.classList.add('bunny-show');
-      }, 0); // Execute after element is added to DOM
-    });
-      
+        // Create multiple flames (fire) for the candles
+        for (var i = 0; i < 5; i++) {
+            var fuego = document.createElement('div');
+            fuego.classList.add('fuego');
+            velas.appendChild(fuego);
+        }
+      }
+
       // Display the bunny on the canvas when the present is clicked
       var bunnyElem = document.getElementById('bunny');
       if (!bunnyElem) {
@@ -110,11 +105,12 @@ if (!cakeElem) {
         mouth.classList.add('mouth');
         head.appendChild(mouth);
       }
-      
-      // Show the bunny with transition effect
+
+      // Show the bunny and cake with transition effects
       setTimeout(function() {
         bunnyElem.classList.add('bunny-show');
-      }, 0); // Execute after element is added to DOM
+        cakeElem.classList.add('cake-show');
+      }, 0); // Execute after elements are added to DOM
     });
 
     nametag.innerText = to;
