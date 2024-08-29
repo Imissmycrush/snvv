@@ -1,10 +1,6 @@
 $vanilla: #f0e4d0;
 $chocolate: #553c13;
 
-body {
-    background-color: #333;
-}
-
 @mixin foodColoring($color) {
     background-color: $color;
     box-shadow:
