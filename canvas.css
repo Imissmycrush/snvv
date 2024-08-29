@@ -13,20 +13,10 @@ h1 {
   font-size: 60px;
   text-align: center;
   text-shadow: 2px 2px #FF007F, 3px 3px #FF033E;
-  top: 15%; /* Adjust as needed */
+  top: 5%; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   animation-name: fall;
   animation-duration: 6s;
   animation-timing-function: infinite;
 }
-
-@keyframes fall {
-  0% {
-    top: 5%; /* Adjusted starting point */
-  }
-  100% {
-    top: 5%; /* Adjusted end point to match the new top value */
-  }
-}
-
