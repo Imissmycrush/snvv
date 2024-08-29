@@ -25,7 +25,7 @@ $chocolate: #553c13;
     position: absolute;
     width: 250px;
     height: 200px;
-    top: 50%;
+    top: 100%; /* Đã thay đổi từ 50% */
     left: 50%;
     margin-top: -70px;
     margin-left: -125px;
@@ -58,12 +58,12 @@ $chocolate: #553c13;
     @include foodColoring($chocolate);
 }
 
-.layer-top { top: 0px; }
-.layer-middle { top: 33px; }
-.layer-bottom { top: 66px; }
+.layer-top { top: 50px; } /* Đã thay đổi từ 0px */
+.layer-middle { top: 83px; } /* Đã thay đổi từ 33px */
+.layer-bottom { top: 116px; } /* Đã thay đổi từ 66px */
 
 .icing {
-    top: 2px;
+    top: 552px; /* Đã thay đổi từ 2px */
     left: 5px;
     background-color: $vanilla;
     width: 240px;
@@ -72,9 +72,9 @@ $chocolate: #553c13;
     &:before {
         content: "";
         position: absolute;
-        top: 4px;
+        top: 54px; /* Đã thay đổi từ 4px */
         right: 5px;
-        bottom: 6px;
+        bottom: 56px; /* Đã thay đổi từ 6px */
         left: 5px;
         background-color: lighten($vanilla, 3%);
         box-shadow:
@@ -96,7 +96,7 @@ $chocolate: #553c13;
 }
 
 .drip1 {
-    top: 53px;
+    top: 113px; /* Đã thay đổi từ 53px */
     left: 5px;
     transform: skewY(15deg);
     height: 48px;
@@ -104,13 +104,13 @@ $chocolate: #553c13;
 }
 
 .drip2 {
-    top: 69px;
+    top: 119px; /* Đã thay đổi từ 69px */
     left: 181px;
     transform: skewY(-15deg);
 }
 
 .drip3 {
-    top: 54px;
+    top: 114px; /* Đã thay đổi từ 54px */
     left: 90px;
     width: 80px;
     border-bottom-left-radius: 40px;
@@ -122,7 +122,7 @@ $chocolate: #553c13;
     width: 16px;
     height: 50px;
     border-radius: 8px / 4px;
-    top: -20px;
+    top: 30px; /* Đã thay đổi từ -20px */
     left: 50%;
     margin-left: -8px;
     z-index: 10;
@@ -144,7 +144,7 @@ $chocolate: #553c13;
     width: 15px;
     height: 35px;
     border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
-    top: -34px;
+    top: 24px; /* Đã thay đổi từ -34px */
     left: 50%;
     margin-left: -7.5px;
     z-index: 10;
