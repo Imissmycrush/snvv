@@ -9,7 +9,7 @@ body {
 #cake {
   display: block;
   position: relative;
-  margin: -10em auto 0 auto;
+  margin: 0 auto -5em auto; /* Adjusted margin-top */
 }
 
 /* ============================================== Candle
