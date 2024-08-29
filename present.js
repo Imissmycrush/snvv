@@ -90,6 +90,34 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 0); // Thực hiện thêm lớp sau khi phần tử đã được thêm vào DOM
     });
 
+    // Display the cake after clicking the present
+      var cakeElem = document.getElementById('cake');
+      if (!cakeElem) {
+        // Create the cake element if it doesn't exist
+        cakeElem = document.createElement('div');
+        cakeElem.id = 'cake';
+        cakeElem.classList.add('cake');
+        document.body.appendChild(cakeElem);
+
+        // Create the candles using cake.css
+        var velas = document.createElement('div');
+        velas.classList.add('velas');
+        cakeElem.appendChild(velas);
+
+        // Create the fire elements
+        for (var i = 0; i < 5; i++) {
+          var fuego = document.createElement('div');
+          fuego.classList.add('fuego');
+          velas.appendChild(fuego);
+        }
+      }
+
+      // Show the cake with a transition effect
+      setTimeout(function() {
+        cakeElem.classList.add('cake-show');
+      }, 500); // Delay to sync with other animations
+    });
+
     nametag.innerText = to;
   }
 
