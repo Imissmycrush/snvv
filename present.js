@@ -85,7 +85,9 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       
       // Show the bunny with transition effect
-      bunnyElem.classList.add('bunny-show');
+ setTimeout(function() {
+        bunnyElem.classList.add('bunny-show');
+      }, 0); // Thực hiện thêm lớp sau khi phần tử đã được thêm vào DOM
     });
 
     nametag.innerText = to;
