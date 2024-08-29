@@ -1,26 +1,3 @@
-$vanilla: #f0e4d0;
-$chocolate: #553c13;
-
-@mixin foodColoring($color) {
-    background-color: $color;
-    box-shadow:
-        0 2px 0px lighten($color, 5%),
-        0 4px 0px darken($color, 8.2%),
-        0 6px 0px darken($color, 8.4%),
-        0 8px 0px darken($color, 8.6%),
-        0 10px 0px darken($color, 8.8%),
-        0 12px 0px darken($color, 9%),
-        0 14px 0px darken($color, 9.2%),
-        0 16px 0px darken($color, 9.4%),
-        0 18px 0px darken($color, 9.6%),
-        0 20px 0px darken($color, 9.8%),
-        0 22px 0px darken($color, 10%),
-        0 24px 0px darken($color, 10.2%),
-        0 26px 0px darken($color, 10.4%),
-        0 28px 0px darken($color, 10.6%),
-        0 30px 0px darken($color, 10.8%);
-}
-
 .cake {
     position: absolute;
     width: 250px;
@@ -42,7 +19,7 @@ $chocolate: #553c13;
     box-shadow:
         0 2px 0 darken(#ccc, 10%),
         0 4px 0 darken(#ccc, 10%),
-        0 5px 40px rgba(black, 0.5);
+        0 5px 40px rgba(0, 0, 0, 0.5);
 }
 
 .cake > * {
@@ -55,7 +32,23 @@ $chocolate: #553c13;
     width: 250px;
     height: 100px;
     border-radius: 50%;
-    @include foodColoring($chocolate);
+    background-color: #553c13;
+    box-shadow:
+        0 2px 0px lighten(#553c13, 5%),
+        0 4px 0px darken(#553c13, 8.2%),
+        0 6px 0px darken(#553c13, 8.4%),
+        0 8px 0px darken(#553c13, 8.6%),
+        0 10px 0px darken(#553c13, 8.8%),
+        0 12px 0px darken(#553c13, 9%),
+        0 14px 0px darken(#553c13, 9.2%),
+        0 16px 0px darken(#553c13, 9.4%),
+        0 18px 0px darken(#553c13, 9.6%),
+        0 20px 0px darken(#553c13, 9.8%),
+        0 22px 0px darken(#553c13, 10%),
+        0 24px 0px darken(#553c13, 10.2%),
+        0 26px 0px darken(#553c13, 10.4%),
+        0 28px 0px darken(#553c13, 10.6%),
+        0 30px 0px darken(#553c13, 10.8%);
 }
 
 .layer-top { top: 50px; } /* Đã thay đổi từ 0px */
@@ -65,25 +58,26 @@ $chocolate: #553c13;
 .icing {
     top: 552px; /* Đã thay đổi từ 2px */
     left: 5px;
-    background-color: $vanilla;
+    background-color: #f0e4d0;
     width: 240px;
     height: 90px;
     border-radius: 50%;
-    &:before {
-        content: "";
-        position: absolute;
-        top: 54px; /* Đã thay đổi từ 4px */
-        right: 5px;
-        bottom: 56px; /* Đã thay đổi từ 6px */
-        left: 5px;
-        background-color: lighten($vanilla, 3%);
-        box-shadow:
-            0 0 4px lighten($vanilla, 5%),
-            0 0 4px lighten($vanilla, 5%),
-            0 0 4px lighten($vanilla, 5%);
-        border-radius: 50%;
-        z-index: 1;
-    }
+}
+
+.icing:before {
+    content: "";
+    position: absolute;
+    top: 54px; /* Đã thay đổi từ 4px */
+    right: 5px;
+    bottom: 56px; /* Đã thay đổi từ 6px */
+    left: 5px;
+    background-color: lighten(#f0e4d0, 3%);
+    box-shadow:
+        0 0 4px lighten(#f0e4d0, 5%),
+        0 0 4px lighten(#f0e4d0, 5%),
+        0 0 4px lighten(#f0e4d0, 5%);
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .drip {
@@ -92,7 +86,7 @@ $chocolate: #553c13;
     height: 60px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: $vanilla;
+    background-color: #f0e4d0;
 }
 
 .drip1 {
@@ -126,16 +120,17 @@ $chocolate: #553c13;
     left: 50%;
     margin-left: -8px;
     z-index: 10;
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 16px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: lighten(#7B020B, 10%);
-    }
+}
+
+.candle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: lighten(#7B020B, 10%);
 }
 
 .flame {
@@ -149,10 +144,10 @@ $chocolate: #553c13;
     margin-left: -7.5px;
     z-index: 10;
     box-shadow:
-        0 0 10px rgba(orange, 0.5),
-        0 0 20px rgba(orange, 0.5),
-        0 0 60px rgba(orange, 0.5),
-        0 0 80px rgba(orange, 0.5);
+        0 0 10px rgba(255, 165, 0, 0.5),
+        0 0 20px rgba(255, 165, 0, 0.5),
+        0 0 60px rgba(255, 165, 0, 0.5),
+        0 0 80px rgba(255, 165, 0, 0.5);
     transform-origin: 50% 90%;
     animation: flicker 1s ease-in-out alternate infinite;
 }
@@ -161,36 +156,41 @@ $chocolate: #553c13;
     0% {
         transform: skewX(5deg);
         box-shadow: 
-            0 0 10px rgba(orange, 0.2),
-            0 0 20px rgba(orange, 0.2),
-            0 0 60px rgba(orange, 0.2),
-            0 0 80px rgba(orange, 0.2) }
+            0 0 10px rgba(255, 165, 0, 0.2),
+            0 0 20px rgba(255, 165, 0, 0.2),
+            0 0 60px rgba(255, 165, 0, 0.2),
+            0 0 80px rgba(255, 165, 0, 0.2);
+    }
     25% {
         transform: skewX(-5deg);
         box-shadow:
-            0 0 10px rgba(orange, 0.5),
-            0 0 20px rgba(orange, 0.5),
-            0 0 60px rgba(orange, 0.5),
-            0 0 80px rgba(orange, 0.5) }
+            0 0 10px rgba(255, 165, 0, 0.5),
+            0 0 20px rgba(255, 165, 0, 0.5),
+            0 0 60px rgba(255, 165, 0, 0.5),
+            0 0 80px rgba(255, 165, 0, 0.5);
+    }
     50% {
         transform: skewX(10deg);
         box-shadow:
-            0 0 10px rgba(orange, 0.3),
-            0 0 20px rgba(orange, 0.3),
-            0 0 60px rgba(orange, 0.3),
-            0 0 80px rgba(orange, 0.3) }
+            0 0 10px rgba(255, 165, 0, 0.3),
+            0 0 20px rgba(255, 165, 0, 0.3),
+            0 0 60px rgba(255, 165, 0, 0.3),
+            0 0 80px rgba(255, 165, 0, 0.3);
+    }
     75% {
         transform: skewX(-10deg);
         box-shadow:
-            0 0 10px rgba(orange, 0.4),
-            0 0 20px rgba(orange, 0.4),
-            0 0 60px rgba(orange, 0.4),
-            0 0 80px rgba(orange, 0.4) }
+            0 0 10px rgba(255, 165, 0, 0.4),
+            0 0 20px rgba(255, 165, 0, 0.4),
+            0 0 60px rgba(255, 165, 0, 0.4),
+            0 0 80px rgba(255, 165, 0, 0.4);
+    }
     100% {
         transform: skewX(5deg);
         box-shadow:
-            0 0 10px rgba(orange, 0.5),
-            0 0 20px rgba(orange, 0.5),
-            0 0 60px rgba(orange, 0.5),
-            0 0 80px rgba(orange, 0.5) }
+            0 0 10px rgba(255, 165, 0, 0.5),
+            0 0 20px rgba(255, 165, 0, 0.5),
+            0 0 60px rgba(255, 165, 0, 0.5),
+            0 0 80px rgba(255, 165, 0, 0.5);
+    }
 }
