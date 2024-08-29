@@ -70,6 +70,11 @@ if (!cakeElem) {
         velas.appendChild(fuego);
     }
 } 
+       // Show the bunny with transition effect
+      setTimeout(function() {
+        bunnyElem.classList.add('bunny-show');
+      }, 0); // Execute after element is added to DOM
+    });
       
       // Display the bunny on the canvas when the present is clicked
       var bunnyElem = document.getElementById('bunny');
