@@ -1,11 +1,12 @@
 .bunny {
   position: absolute;
-  right: ; /* Start the bunny off-canvas to the right */
-  top: 150;
+  right: -300px; /* Start the bunny off-canvas */
+  top: 150px;
   margin: 75px;
   display: flex;
   justify-content: flex-end;
   opacity: 0; /* Start with the bunny invisible */
+  transition: right 2s ease, opacity 2s ease; /* Animate both right position and opacity */
 }
 
 .head {
@@ -106,9 +107,8 @@
 .bunny-show{
         
 .bunny-show {
-  opacity: 1 !important;
-        right: 0 !important;
-        transition: all 2s;
+  right: 0; /* Move the bunny to the right side of the canvas */
+  opacity: 1; /* Make the bunny visible */
 }
 
     }
