@@ -13,7 +13,7 @@ h1 {
   font-size: 60px;
   text-align: center;
   text-shadow: 2px 2px #FF007F, 3px 3px #FF033E;
-  top:5 %; /* Decreased from 35% to 20% to move it higher */
+  top:15%; /* Decreased from 35% to 20% to move it higher */
   animation-name: fall;
   animation-duration: 6s;
   animation-timing-function: infinite;
