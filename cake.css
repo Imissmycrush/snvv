@@ -5,7 +5,7 @@ html, body {
   overflow: hidden; /* Prevent scrolling */
 }
 
-#cake {
+.cake {
   display: block;
   position: absolute; /* Use absolute positioning for precise placement */
   top: 30%; /* Center vertically */
