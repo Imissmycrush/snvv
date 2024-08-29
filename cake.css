@@ -21,7 +21,7 @@ html, body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 65%; /* Adjust top to fit within canvas */
+  top: 67%; /* Adjust top to fit within canvas */
   left: 50%;
   margin-left: -2.4px;
   width: 5px;
