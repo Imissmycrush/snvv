@@ -6,7 +6,7 @@
   display: flex;
   justify-content: flex-end; /* Aligns content to the right */
   opacity: 0;
-  transition: opacity 2s, right 2s; 
+ transition: opacity 2s ease; /* Animate opacity */
 }
 
 .head {
@@ -106,5 +106,5 @@
 }
 .bunny-show{
         opacity: 1 !important;
-        right: 0 !important;
+  animation: slideIn 2s forwards; /* Trigger sliding in with keyframes */
     }
