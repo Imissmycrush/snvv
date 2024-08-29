@@ -5,7 +5,7 @@ html, body {
   overflow: hidden; /* Prevent scrolling */
 }
 
-#cake {
+.cake {
   display: block;
   position: absolute; /* Use absolute positioning for precise placement */
   top: 30%; /* Center vertically */
@@ -16,7 +16,7 @@ html, body {
 }
 
 
-.bunny-show {
+.cake-show {
   opacity: 1;
   transform: translateX(0); /* Make sure this matches with the initial position */
 }
