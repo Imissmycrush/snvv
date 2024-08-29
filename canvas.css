@@ -21,3 +21,12 @@ h1 {
   animation-timing-function: infinite;
 }
 
+@keyframes fall {
+  0% {
+    top: 5%; /* Adjusted starting point */
+  }
+  100% {
+    top: 5%; /* Adjusted end point to match the new top value */
+  }
+}
+
