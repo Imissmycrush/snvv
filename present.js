@@ -89,10 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
         bunnyElem.classList.add('bunny-show');
       }, 0); // Execute after element is added to DOM
     
-var cakeElem = document.getElementById('cake');
-      if (cakeElem) {
-        cakeElem.classList.add('show-cake');
-      }
+
     
     });
     nametag.innerText = to;
