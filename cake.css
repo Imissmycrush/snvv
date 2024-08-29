@@ -17,7 +17,7 @@ body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: calc(228px + 500px); /* Adjusted */
+  top: 228px;
   left: 50%;
   margin-left: -2.4px;
   margin-top: -8.33333333px;
@@ -36,11 +36,11 @@ body {
   height: 2.22222222px;
 }
 .velas:after {
-  top: calc(25% + 500px); /* Adjusted */
+  top: 25%;
   left: 0;
 }
 .velas:before {
-  top: calc(45% + 500px); /* Adjusted */
+  top: 45%;
   left: 0;
 }
 
@@ -50,7 +50,7 @@ body {
 .fuego {
   border-radius: 100%;
   position: absolute;
-  top: calc(-20px + 500px); /* Adjusted */
+  top: -20px;
   left: 50%;
   margin-left: -2.6px;
   width: 6.66666667px;
