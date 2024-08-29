@@ -6,7 +6,7 @@ html, body {
 #cake {
   display: block;
   position: absolute; /* Use absolute positioning for precise placement */
-  top: 20%; /* Center vertically */
+  top: 40%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust to center perfectly */
   margin: 0;
@@ -19,7 +19,7 @@ html, body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 37%; /* Adjust top to fit within canvas */
+  top: 57%; /* Adjust top to fit within canvas */
   left: 50%;
   margin-left: -2.4px;
   width: 5px;
