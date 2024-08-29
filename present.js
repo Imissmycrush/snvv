@@ -48,13 +48,28 @@ document.addEventListener("DOMContentLoaded", function() {
     present.addEventListener("click", function() {
       present.classList.toggle("open");
       document.querySelector('#card').classList.add('card-show');
+      
+  // Display the cake on the canvas when the present is clicked
+var cakeElem = document.getElementById('cake');
+if (!cakeElem) {
+    // Create the cake element if it doesn't exist
+    cakeElem = document.createElement('div');
+    cakeElem.id = 'cake';
+    document.body.appendChild(cakeElem);
 
-      // Add cake.css dynamically when present is clicked
-      var link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'cake.css'; // Path to your cake.css file
-      document.head.appendChild(link);
+    // Create the candles element using cake.css
+    var velas = document.createElement('div');
+    velas.classList.add('velas');
+    cakeElem.appendChild(velas);
 
+    // Create multiple flames (fire) for the candles
+    for (var i = 0; i < 5; i++) {
+        var fuego = document.createElement('div');
+        fuego.classList.add('fuego');
+        velas.appendChild(fuego);
+    }
+}
+      
       // Display the bunny on the canvas when the present is clicked
       var bunnyElem = document.getElementById('bunny');
       if (!bunnyElem) {
