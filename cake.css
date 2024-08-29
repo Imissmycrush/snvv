@@ -2,7 +2,7 @@
     position: absolute;
     width: 250px;
     height: 200px;
-    top: 100%; /* Đã thay đổi từ 50% */
+    top: 50%;
     left: 50%;
     margin-top: -70px;
     margin-left: -125px;
@@ -51,12 +51,12 @@
         0 30px 0px darken(#553c13, 10.8%);
 }
 
-.layer-top { top: 50px; } /* Đã thay đổi từ 0px */
-.layer-middle { top: 83px; } /* Đã thay đổi từ 33px */
-.layer-bottom { top: 116px; } /* Đã thay đổi từ 66px */
+.layer-top { top: 0px; }
+.layer-middle { top: 33px; }
+.layer-bottom { top: 66px; }
 
 .icing {
-    top: 552px; /* Đã thay đổi từ 2px */
+    top: 2px;
     left: 5px;
     background-color: #f0e4d0;
     width: 240px;
@@ -67,9 +67,9 @@
 .icing:before {
     content: "";
     position: absolute;
-    top: 54px; /* Đã thay đổi từ 4px */
+    top: 4px;
     right: 5px;
-    bottom: 56px; /* Đã thay đổi từ 6px */
+    bottom: 6px;
     left: 5px;
     background-color: lighten(#f0e4d0, 3%);
     box-shadow:
@@ -90,7 +90,7 @@
 }
 
 .drip1 {
-    top: 113px; /* Đã thay đổi từ 53px */
+    top: 53px;
     left: 5px;
     transform: skewY(15deg);
     height: 48px;
@@ -98,13 +98,13 @@
 }
 
 .drip2 {
-    top: 119px; /* Đã thay đổi từ 69px */
+    top: 69px;
     left: 181px;
     transform: skewY(-15deg);
 }
 
 .drip3 {
-    top: 114px; /* Đã thay đổi từ 54px */
+    top: 54px;
     left: 90px;
     width: 80px;
     border-bottom-left-radius: 40px;
@@ -116,7 +116,7 @@
     width: 16px;
     height: 50px;
     border-radius: 8px / 4px;
-    top: 30px; /* Đã thay đổi từ -20px */
+    top: -20px;
     left: 50%;
     margin-left: -8px;
     z-index: 10;
@@ -139,7 +139,7 @@
     width: 15px;
     height: 35px;
     border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
-    top: 24px; /* Đã thay đổi từ -34px */
+    top: -34px;
     left: 50%;
     margin-left: -7.5px;
     z-index: 10;
@@ -159,38 +159,33 @@
             0 0 10px rgba(255, 165, 0, 0.2),
             0 0 20px rgba(255, 165, 0, 0.2),
             0 0 60px rgba(255, 165, 0, 0.2),
-            0 0 80px rgba(255, 165, 0, 0.2);
-    }
+            0 0 80px rgba(255, 165, 0, 0.2) }
     25% {
         transform: skewX(-5deg);
         box-shadow:
             0 0 10px rgba(255, 165, 0, 0.5),
             0 0 20px rgba(255, 165, 0, 0.5),
             0 0 60px rgba(255, 165, 0, 0.5),
-            0 0 80px rgba(255, 165, 0, 0.5);
-    }
+            0 0 80px rgba(255, 165, 0, 0.5) }
     50% {
         transform: skewX(10deg);
         box-shadow:
             0 0 10px rgba(255, 165, 0, 0.3),
             0 0 20px rgba(255, 165, 0, 0.3),
             0 0 60px rgba(255, 165, 0, 0.3),
-            0 0 80px rgba(255, 165, 0, 0.3);
-    }
+            0 0 80px rgba(255, 165, 0, 0.3) }
     75% {
         transform: skewX(-10deg);
         box-shadow:
             0 0 10px rgba(255, 165, 0, 0.4),
             0 0 20px rgba(255, 165, 0, 0.4),
             0 0 60px rgba(255, 165, 0, 0.4),
-            0 0 80px rgba(255, 165, 0, 0.4);
-    }
+            0 0 80px rgba(255, 165, 0, 0.4) }
     100% {
         transform: skewX(5deg);
         box-shadow:
             0 0 10px rgba(255, 165, 0, 0.5),
             0 0 20px rgba(255, 165, 0, 0.5),
             0 0 60px rgba(255, 165, 0, 0.5),
-            0 0 80px rgba(255, 165, 0, 0.5);
-    }
+            0 0 80px rgba(255, 165, 0, 0.5) }
 }
