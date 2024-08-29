@@ -1,6 +1,6 @@
 .bunny {
   position: absolute;
-  right: -300px; /* Off-screen to the right */
+  right: -100px; /* Off-screen to the right */
   top: 150px;
   display: flex;
   justify-content: flex-end;
