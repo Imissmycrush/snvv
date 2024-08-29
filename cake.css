@@ -5,7 +5,7 @@ html, body {
   overflow: hidden; /* Prevent scrolling */
 }
 
-.cake {
+#cake {
   display: block;
   position: absolute; /* Use absolute positioning for precise placement */
   top: 30%; /* Center vertically */
@@ -13,6 +13,9 @@ html, body {
   transform: translate(-50%, -50%); /* Adjust to center perfectly */
   margin: 0;
 }
+
+/* ============================================== Candle
+*/
 
 .velas {
   background: #ffffff;
