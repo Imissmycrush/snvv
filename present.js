@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var contentElem = document.querySelector('#card .content-card');
     var honeyElem = document.querySelector('#card .honey');
 
-    if (titleElem) titleElem.innerHTML = `💘${titleCard}💘`;
-    if (contentElem) contentElem.innerHTML = `${contentCard}`;
-    if (honeyElem) honeyElem.setAttribute('src', `${giftImage}`);
+    if (titleElem) titleElem.innerHTML = 💘${titleCard}💘;
+    if (contentElem) contentElem.innerHTML = ${contentCard};
+    if (honeyElem) honeyElem.setAttribute('src', ${giftImage});
 
     var _giftLink, _giftImg;
 
@@ -88,10 +88,8 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(function() {
         bunnyElem.classList.add('bunny-show');
       }, 0); // Execute after element is added to DOM
-    
-
-    
     });
+
     nametag.innerText = to;
   }
 
