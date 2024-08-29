@@ -17,7 +17,7 @@ body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: calc(228px + 50px); /* Adjusted */
+  top: calc(228px + 200px); /* Adjusted */
   left: 50%;
   margin-left: -2.4px;
   margin-top: -8.33333333px;
@@ -50,7 +50,7 @@ body {
 .fuego {
   border-radius: 100%;
   position: absolute;
-  top: calc(-20px + 50px); /* Adjusted */
+  top: calc(-20px + 200px); /* Adjusted */
   left: 50%;
   margin-left: -2.6px;
   width: 6.66666667px;
