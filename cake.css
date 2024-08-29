@@ -1,17 +1,17 @@
-html,
-body {
+html, body {
   width: 100%;
   height: 100%;
-}
-
-body {
-  background: #ee9ca7;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 #cake {
   display: block;
-  position: relative;
-  margin: -10em auto 0 auto;
+  position: absolute; /* Use absolute positioning for precise placement */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center perfectly */
+  margin: 0;
 }
 
 /* ============================================== Candle
@@ -21,13 +21,12 @@ body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 228px;
+  top: 10%; /* Adjust top to fit within canvas */
   left: 50%;
   margin-left: -2.4px;
-  margin-top: -8.33333333px;
   width: 5px;
   height: 35px;
-  transform: translateY(-300px);
+  transform: translateY(-50px); /* Adjust translate to fit within canvas */
   backface-visibility: hidden;
   animation: in 500ms 6s ease-out forwards;
 }
@@ -54,7 +53,7 @@ body {
 .fuego {
   border-radius: 100%;
   position: absolute;
-  top: -20px;
+  top: -10px; /* Adjust top to fit within canvas */
   left: 50%;
   margin-left: -2.6px;
   width: 6.66666667px;
